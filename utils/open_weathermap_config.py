@@ -1,0 +1,16 @@
+key = '13402591cdae77d37b11e4c95e417040'
+
+HOST = 'http://api.openweathermap.org/data/2.5/weather?'
+
+APPID = 'APPID=' + key
+
+FAHRENHEIT = '&units=imperial'
+CELSIUS = '&units=metric'
+
+IMPERIAL_WEATHER_BY_CITY_NAME = HOST + APPID + FAHRENHEIT + '&q=%s'
+IMPERIAL_WEATHER_BY_CITY_ID = HOST + APPID + FAHRENHEIT + '&id=%s'
+IMPERIAL_WEATHER_BY_CITY_GEO_LOCATION = HOST + APPID + FAHRENHEIT + '&lat=%s&lon=%s'
+
+METRIC_WEATHER_BY_CITY_NAME = HOST + APPID + CELSIUS + '&q=%s'
+METRIC_WEATHER_BY_CITY_ID = HOST + APPID + CELSIUS + '&id=%s'
+METRIC_WEATHER_BY_CITY_GEO_LOCATION = HOST + APPID + CELSIUS + '&lat=%s&lon=%s'
